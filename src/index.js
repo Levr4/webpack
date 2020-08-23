@@ -2,7 +2,7 @@ import _ from 'lodash'
 
 function component() {
 	const	element = document.createElement('div');
-	const array = ['World', 'webpack']
+	const array = ['World', 'webpack', '!!']
 	element.innerHTML = _.join(array, ' ')
 	return element;
 }
