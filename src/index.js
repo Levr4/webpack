@@ -1,13 +1,13 @@
 import _ from 'lodash'
-import Lion from './utilities.js'
+import './style.css'
 
-console.log(Lion.say());
 
 function component() {
-	const	element = document.createElement('div');
-	const array = ['World', 'webpack', '!!']
-	element.innerHTML = _.join(array, ' ')
-	return element;
+  const	element = document.createElement('div');
+  const array = ['World', 'webpack', '!!']
+  element.innerHTML = _.join(array, ' ')
+  return element;
 }
 
 document.body.appendChild(component());
+document.body.classList.add('haikei')
