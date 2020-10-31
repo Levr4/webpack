@@ -26,14 +26,14 @@
     "node-sass": "^4.14.1",
     "sass-loader": "^10.0.1",
     "style-loader": "^1.2.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot --host 0.0.0.0"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "launch": "webpack-dev-server --mode production",
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack"
+  }
 }
